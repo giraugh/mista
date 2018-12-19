@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cannon.png-78041ff26400794dee06505687821633.stex"
+path="res://.import/Cannon.png-dbd4d0153f87650b86572ebd931011be.stex"
 
 [deps]
 
-source_file="res://Sprites/cannon.png"
-dest_files=[ "res://.import/cannon.png-78041ff26400794dee06505687821633.stex" ]
+source_file="res://Sprites/Cannon.png"
+dest_files=[ "res://.import/Cannon.png-dbd4d0153f87650b86572ebd931011be.stex" ]
 
 [params]
 

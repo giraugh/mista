@@ -3,17 +3,25 @@
 [ext_resource path="res://Scripts/Cannon.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/cannon.png" type="Texture" id=2]
 
-[node name="Cannon" type="Node2D"]
+[node name="Cannon" type="Node2D" groups=[
+"cannon",
+]]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Body" type="Node2D" parent="." index="0"]
 
-[node name="Sprite" type="Sprite" parent="Body" index="0"]
+_sections_unfolded = [ "Transform" ]
+
+[node name="Nose" type="Node2D" parent="Body" index="0"]
+
+position = Vector2( 96.0052, 0.918716 )
+
+[node name="Sprite" type="Sprite" parent="Body" index="1"]
 
 position = Vector2( 0, 0.936554 )
-rotation = 1.5708
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 

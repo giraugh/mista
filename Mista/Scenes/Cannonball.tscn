@@ -1,16 +1,17 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scenes/Cannonball.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Cannonball.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/ball.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 47.0
+radius = 20.0
 
-[node name="Cannonball" type="RigidBody2D" index="0"]
+[node name="Cannonball" type="RigidBody2D" index="0" groups=[
+"cannonball",
+]]
 
-editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -35,8 +36,15 @@ script = ExtResource( 1 )
 
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Ball" type="Node2D" parent="." index="1"]
 
+editor/display_folded = true
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Ball" index="0"]
+
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 
